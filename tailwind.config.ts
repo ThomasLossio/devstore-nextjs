@@ -7,11 +7,16 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    sans: 'var(--font-inter)',
+    extend: {
+      fontFamily: {
+        sans: 'var(--font-inter)',
+      },
+      gridTemplateRows: {
+        app: 'min-content max-content',
+      },
+    },
   },
-  gridTemplateRows: {
-    app: 'min-content max-content',
-  },
+
   plugins: [],
 }
 export default config
